@@ -543,3 +543,16 @@ body {
     opacity: 1;
   }
 }
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+
+.hero_img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  animation: imgFade 1s ease-in-out;
+}
