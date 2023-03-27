@@ -228,10 +228,11 @@ body {
   }
 
   .about_us_text {
-    font-size: 0.1rem;
+    font-size: 0.7rem;
     font-weight: 200;
     margin-top: 0.5rem;
     text-align: center;
+    width: 15rem;
   }
 
   .card_container {
@@ -453,6 +454,13 @@ body {
 }
 
 @media screen and (min-width: 767px) {
+  .about_us_text {
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin-top: 0.5rem;
+    text-align: justify;
+    width: 40rem;
+  }
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -497,13 +505,6 @@ body {
   text-align: center;
 }
 
-.about_us_text {
-  font-size: 0.9rem;
-  font-weight: 200;
-  margin-top: 0.5rem;
-  text-align: justify;
-  width: 40rem;
-}
 /* end of about us */
 /* footer */
 
