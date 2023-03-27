@@ -10,12 +10,16 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <title>WITED</title>
   </head>
   <body>
     <!-- navbar -->
 
-    <header class="header">
+    <!-- <header class="header">
       <nav class="navbar_container">
         <div class="navbar_left">
           <img src="./img/wited.png" alt="wited logo" width="50" height="50" />
@@ -45,6 +49,51 @@
 
         <div class="hamburger" id="nav-toggle">
           <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header> -->
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="./img/wited.png"
+            alt="wited"
+            class="logo"
+            width="75"
+            height="75"
+          />
+          <!-- <i class="ri-bar-chart-grouped-fill"></i> -->
+          <!-- Biostat Stars -->
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Mission & Vision</a>
+            </li>
+            <li class="nav__item">
+              <a href="#testimonials" class="nav__link">Excos</a>
+            </li>
+
+            <!-- <li class="nav__item"><i class="ri-moon-fill change-theme" id="theme-button"></i></li> -->
+            <li class="nav__item">
+              <i class="bx bx-sun change-theme" id="theme-button"></i>
+            </li>
+          </ul>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
         </div>
       </nav>
     </header>

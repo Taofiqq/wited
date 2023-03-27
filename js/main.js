@@ -1,20 +1,53 @@
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+// const navMenu = document.getElementById("nav-menu"),
+//   navToggle = document.getElementById("nav-toggle"),
+//   navClose = document.getElementById("nav-close");
 
-// console.log(navMenu, navToggle, navClose);
+// // console.log(navMenu, navToggle, navClose);
+
+// if (navToggle) {
+//   navToggle.addEventListener("click", () => {
+//     navMenu.classList.add("show-menu");
+//   });
+// }
+
+// if (navClose) {
+//   navClose.addEventListener("click", () => {
+//     navMenu.classList.remove("show-menu");
+//   });
+// }
+
+// NAVIGATION TOGGLE
+
+// Show navigation menu
+const navMenu = document.getElementById("nav-menu");
+const navToggle = document.getElementById("nav-toggle");
+const navClose = document.getElementById("nav-close");
 
 if (navToggle) {
-  navToggle.addEventListener("click", () => {
+  navToggle.addEventListener("click", function () {
     navMenu.classList.add("show-menu");
   });
 }
 
+// Hide Navigation Menu
 if (navClose) {
-  navClose.addEventListener("click", () => {
+  navClose.addEventListener("click", function () {
     navMenu.classList.remove("show-menu");
   });
 }
+
+// remvove menu when cicked
+const navLink = document.querySelectorAll(".nav__link");
+const linkAction = () => {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.remove("show");
+};
+
+navLink.forEach((link) => {
+  link.addEventListener("click", linkAction);
+});
+
+// END OF NAVIGATION TOGGLE
 
 const slider = document.querySelector(".image_slider");
 const arrowLeft = document.querySelector(".arrow_left");
